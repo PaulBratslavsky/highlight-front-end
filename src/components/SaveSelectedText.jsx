@@ -70,6 +70,8 @@ const SaveSelectedText = ({ children }) => {
       });
 
       const result = await response.json();
+      setSelectedText("");  
+      setSelections([]);
       console.log(result);
     });
   };
